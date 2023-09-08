@@ -1,0 +1,11 @@
+/*
+
+!.gitignore
+!README.md
+
+**/.DS_Store
+**.log
+
+!.config/
+.config/*
+!.config/nvim/
