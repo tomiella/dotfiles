@@ -1,0 +1,18 @@
+import = [
+  "~/.config/alacritty/themes/themes/coolnight.toml"
+]
+[env]
+TERM = "alacritty"
+
+[window]
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless"
+
+opacity = 0.8
+blur = true
+
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+
