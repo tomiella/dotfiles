@@ -29,5 +29,6 @@ source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 
 alias ll="ls -la"
 alias pull="ls | xargs -P10 -I{} git -C {} pull"
+alias cat="bat"
 
 PATH="/home/tom/.local/share/solana/install/active_release/bin:$PATH"
