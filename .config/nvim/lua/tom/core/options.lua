@@ -1,39 +1,36 @@
-vim.cmd("let g:netrw_liststyle = 3")
+-- Set highlight on search
+vim.o.hlsearch = true
 
-local opt = vim.opt
+-- Make line numbers default
+vim.wo.number = true
+vim.o.relativenumber = true
 
-opt.relativenumber = true
-opt.number = true
+-- Disable mouse mode
+vim.o.mouse = ""
 
--- tabs & indentation
-opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
-opt.shiftwidth = 2 -- 2 spaces for indent width
-opt.expandtab = true -- expand tab to spaces
-opt.autoindent = true -- copy indent from current line when starting new one
+-- Enable break indent
+vim.o.breakindent = true
 
-opt.wrap = false
+-- Save undo history
+vim.o.undofile = true
 
--- search settings
-opt.ignorecase = true -- ignore case when searching
-opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
+-- Case insensitive searching UNLESS /C or capital in search
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
-opt.cursorline = true
+-- Decrease update time
+vim.o.updatetime = 250
+vim.wo.signcolumn = "yes"
 
--- turn on termguicolors for tokyonight colorscheme to work
--- (have to use iterm2 or any other true color terminal)
-opt.termguicolors = true
-opt.background = "dark" -- colorschemes that can be light or dark will be made dark
-opt.signcolumn = "yes" -- show sign column so that text doesn't shift
+-- Set colorscheme
+--vim.cmd [[colorscheme onedark]]
+-- vim.cmd.colorscheme("catppuccin")
 
--- backspace
-opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
+--vim.cmd()
+vim.opt.clipboard = "unnamedplus"
 
--- clipboard
-opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+-- Set completeopt to have a better completion experience
+vim.o.completeopt = "menuone,noselect"
 
--- split windows
-opt.splitright = true -- split vertical window to the right
-opt.splitbelow = true -- split horizontal window to the bottom
-
--- turn off swapfile
-opt.swapfile = false
+-- Concealer for Neorg
+vim.o.conceallevel = 2
