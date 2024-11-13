@@ -30,3 +30,13 @@ then use GNU stow to create symlinks
 ```
 $ stow .
 ```
+
+
+# DOTFILES
+## Shell Setup
+brew install zsh
+chsh -s $(which zsh)
+
+brew install --cask font-jetbrains-mono-nerd-font
+
+curl -sS https://starship.rs/install.sh | sh
