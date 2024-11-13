@@ -11,18 +11,16 @@ setopt hist_verify
 
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-you-should-use/you-should-use.plugin.zsh
 
-alias ll="ls -la"
 alias pull="ls | xargs -P10 -I{} git -C {} pull"
 alias cat="bat"
 
 # Eza
 alias l="eza -l --icons --git -a"
+alias ll="l"
 alias lt="eza --tree --level=2 --long --icons --git"
-
-PATH="/home/tom/.local/share/solana/install/active_release/bin:$PATH"
 
 eval "$(zoxide init zsh)"

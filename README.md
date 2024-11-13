@@ -4,16 +4,45 @@
 
 Ensure you have the following installed on your system. The examples are using yay as a packet manager.
 
-### Git
-
+### zsh
 ```
-yay git
+```
+brew install zsh
+chsh -s $(which zsh)
+```
+
+### Font
+You can use any nerd-font.
+```
+brew install --cask font-jetbrains-mono-nerd-font
+```
+
+### Starship
+```
+brew install starship
+```
+
+### eza
+```
+brew install eza
+```
+
+### zoxide
+```
+brew install zoxide
+```
+
+### Neovim
+```
+brew isntall node
+brew install ripgrep
+brew install luarocks
+brew install neovim
 ```
 
 ### Stow
-
 ```
-yay stow
+brew install stow
 ```
 
 ## Installation
@@ -35,8 +64,5 @@ $ stow .
 # DOTFILES
 ## Shell Setup
 brew install zsh
-chsh -s $(which zsh)
 
-brew install --cask font-jetbrains-mono-nerd-font
 
-curl -sS https://starship.rs/install.sh | sh
