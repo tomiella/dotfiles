@@ -6,7 +6,6 @@ Ensure you have the following installed on your system. The examples are using y
 
 ### zsh
 ```
-```
 brew install zsh
 chsh -s $(which zsh)
 ```
