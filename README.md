@@ -59,10 +59,3 @@ then use GNU stow to create symlinks
 ```
 $ stow .
 ```
-
-
-# DOTFILES
-## Shell Setup
-brew install zsh
-
-
