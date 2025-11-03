@@ -24,3 +24,11 @@ alias ll="l"
 alias lt="eza --tree --level=2 --long --icons --git"
 
 eval "$(zoxide init zsh)"
+
+export TAURI_SIGNING_PRIVATE_KEY="$(cat ~/.tauri/elytra.key)"
+export TAURI_SIGNING_PRIVATE_KEY_PASSWORD="pranjic"
+export TAURI_PRIVATE_KEY="$(cat ~/.tauri/elytra.key)"
+export TAURI_PRIVATE_KEY_PASSWORD="pranjic"
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="$PATH:/Users/tomiella/.local/share/solana/install/active_release/bin/platform-tools-sdk/sbf/dependencies/platform-tools/llvm/bin"
